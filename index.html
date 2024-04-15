@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no, width=device-width">
+    <title>覆盖物的添加与移除</title>
+  <link rel="stylesheet" href="https://a.amap.com/jsapi_demos/static/demo-center/css/demo-center.css" />
+    <script src="https://cache.amap.com/lbs/static/es5.min.js"></script>
+    <script src="https://webapi.amap.com/maps?v=1.4.15&key=6f025e700cbacbb0bb866712d20bb35c"></script>
+    <script type="text/javascript" src="https://cache.amap.com/lbs/static/addToolbar.js"></script>
+    <link rel="stylesheet" type="text/css" href="./index.css"/>
+      <!-- 重要，请到 https://console.amap.com 申请 JS API 的 key和密钥 -->
+      <script> 
+        window._AMapSecurityConfig = {
+          securityJsCode: '290ddc4b0d33be7bc9b354bc6a4ca614',
+        }
+      </script>
+      
+</head>
+<body>
+<div id="container"></div>
+<div id="controler" class="input-card" style="width:24rem;">
+    <h4>添加、删除覆盖物</h4>
+    <div class="input-item">
+      <label>Marker：</label>
+      <button class="btn" id="add-marker" style="margin-right:1rem;">添加Marker</button>
+      <button class="btn" id="remove-marker">删除Marker</button>
+    </div>
+    <div class="input-item">
+      <label>Circle：</label>
+      <button class="btn" id="add-circle" style="margin-right:1rem;">添加Circle</button>
+      <button class="btn" id="remove-circle">删除Circle</button>
+    </div>
+    <button class="btn" id="toggle-panel" style="margin-bottom: 1rem;">hide</button>
+</div>
+
+<script src="./index.js"></script>
+</body>
+</html>
